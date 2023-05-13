@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo-search.png" style="height: 100px; width: 100px;">
-    <SearchFilter msg="Real-time Search Filter"/>
+    <SearchFilter :names="Dummynames" />
   </div>
 </template>
 
@@ -12,6 +12,19 @@ export default {
   name: 'App',
   components: {
     SearchFilter
+  },
+  data() {
+    return {
+      Dummynames: [
+        'Asher Azriel Ginting', 'Donny S', 'Judika S', 'Rael Bangun', 'Kristanto G',
+        'Dian Lestari', 'tanto wijaya', 'hendra pratama', 'Indah Permata', 'Joko Santoso',
+        'Kartika Sari', 'lia indriani', 'Mega Kurniawan', 'Nina Amelia', 'dicky zulkarnain',
+        'Putri Anggraini', 'Joel S', 'Sari Kusumawati', 'Taufik Rahman', 'Nurul Fauziah',
+        'Vita Fitriani', 'Sarmila', 'budiman harjono', 'Yanti', 'Sri Kartika Sari',
+        'Abdul Hakim', 'budi jhon', 'santania aldita', 'galuh sekar', 'Yenni Sinta',
+      ]
+
+    }
   }
 }
 </script>
